@@ -14,7 +14,7 @@ print("Helloo World...!!!")
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Variables :- A vaiable is name given to memory location in a program.
+# Variables :- A variable is name given to memory location in a program.
 
 name = "Siddhi"
 age = 19
@@ -24,7 +24,7 @@ SurName = "Amale"
 
 # Data Types
 ''' 1) Integer  => print(type(19))          => <class 'int'>
-    2) String   => print(type("siddhi))     => <class 'str'>
+    2) String   => print(type("siddhi"))     => <class 'str'>
     3) Float    => print(type(3.141))       => <class 'float'>
     4) Boolean  => print(type(True))        => <class 'bool'>
     5) None     => print(type(complex_num)) => <class 'complex'>
@@ -60,7 +60,7 @@ SurName = "Amale"
               print(l1 is l2)      #false
               print(l1 is l3)      #true
               print(l1 is not l3)  #false
-    6) Membership operator ('in','not in') :- Used to test if a sequence is presented in an object.
+    6) Membership operator ('in','not in') :- Used to test if a sequence is present in an object.
         e.g=> my_list = [1,2,3,4,5]
               print(3 in my_list)     #true
               print(3 not in my_list) #false
