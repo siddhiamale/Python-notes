@@ -50,7 +50,8 @@ str[-3 :-1] is 'e g'
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Conditional Statements
+# Conditional Statements :- control statements are statements which control or change the flow of execution.
+
 ''' Syntax :-
      if (condtion):
          statement1

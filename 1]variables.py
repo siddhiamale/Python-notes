@@ -49,14 +49,28 @@ SurName = "Amale"
 
 # Types of operators :- An qperator is a symbol that performs a certain operation between operands.
 
-''' 1) Arithmetic operator (+,-,*,/,%,**)
-    2) Relational / Comparison operator (==,!=,>,<,<=,>=)
+''' 1) Arithmetic operator (+,-,*,/,%,**,//) :- These operators are used with numeric values to perform common mathematical operations.
+    2) Relational / Comparison operator (==,!=,>,<,<=,>=) :- These operators compare values
     3) Assignment operator (=,+=,-=,*=,/=,%=,**=)
-    4) Logical operators (not,and,or)   '''
+    4) Logical operators (not,and,or) :- Used to combine conditional statements.
+    5) Identity operator ('is'.'is not') :- Used to compare the memory locations of two objects.
+        e.g=> l1 = [1,2,3]
+              l2 = [1,2,3]
+              l3 = l1
+              print(l1 is l2)      #false
+              print(l1 is l3)      #true
+              print(l1 is not l3)  #false
+    6) Membership operator ('in','not in') :- Used to test if a sequence is presented in an object.
+        e.g=> my_list = [1,2,3,4,5]
+              print(3 in my_list)     #true
+              print(3 not in my_list) #false
+
+              
+    '''
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Input in Python :- input() statement is used to accept values (using keyboard) from user.
+# Input in Python :- input() statement is used to accept values (using keyboard) from user.It returns string.
 
 input()           #result of input() is always a str.
 int(input())      #int
