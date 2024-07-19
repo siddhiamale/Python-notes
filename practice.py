@@ -92,7 +92,7 @@ else:
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------      
-# PART 2
+# PART 3
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # WAP to ask the user to enter names of thier 3 favourite movies & store them in a list
@@ -110,13 +110,13 @@ print(movies)
 
 # WAP to check if a list contains a palindrome of elements.
 list = [1,2,3,2,1]
-list_copy = list.copy()
-
-if(list_copy == list.reverse()):
-    print("list is palindrome..")
+copy_list = list.copy()
+copy_list.reverse()
+if (list == copy_list):
+    print("list is palindrome")
 else:
-    print("list is not palindrome..")    
-
+    print("list is not palindrome")    
+    
 
 # WAP to count the number of students with the "A" grade.
 grade = ("C","D","A","A","B","B","A")
@@ -129,4 +129,111 @@ print(grade.sort())
 
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
+# PART 4
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Store the following word meaning in python dictionary:
+#     table : "a piece of furniture","list of facts and figures"
+#     cat : "a small animal"
+dict = {
+    "cat" : "a small animal",
+    "table" : ["a piece of furniture","list of facts and figures"]
+}
+
+print(dict)
+
+
+''' You are given list of subjects for students.Assume one classroom is required for one subject.
+      How many classrooms are needed by all students
+        python,java,C++,python,javascript,java,python,java,C++,C
+       
+'''
+class_list = {"python","java","C++","python","javascript","java","python","java","C++","C"}
+
+print(len(class_list))     # 5
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+# PART 5
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Print numbers from 1 to 100
+i = 1
+while i <= 100:
+    print(i)
+    i += 1
+
+
+# Print numbers from 100 to 1
+i = 100
+while i >= 1:
+    print(i)
+    i -= 1
+
+
+# Print multiplication table for a number n
+n = int(input("ENter no:-"))
+i = 1
+while i <= 10:
+    print(f"{n} * {i} = {n*i}")
+    i += 1
+
+
+# Print the elements of the following list using python
+# [1,4,9,16,25,36,49,64,81,100]
+nums = [1,4,9,16,25,36,49,64,81,100]
+idx = 0
+while idx < len(nums):
+    print(nums[idx])
+    idx += 1
+
+
+# Search for number x in this tuple using loop
+#  (1,4,9,16,25,36,49,64,81,100)
+x = 64
+nums = (1,4,9,16,25,36,49,64,81,100)
+idx = 0
+while idx <= len(nums):
+    if(nums[idx] == x):
+        print("no found at index",idx)
+    idx += 1
+
+
+# using for and range
+# Print numbers from 1 to 100
+for i in range(1,101):
+    print(i)
+
+
+# Print numbers from 100 to 1
+for i in range (100,0,-1):
+    print(i)
+
+
+# Print multiplication table of a number n
+n = 5
+for i in range(1,11):
+    print(f"{n} * {i} = {n*i}")
+
+
+# WAP to find the sum of first n numbers (using while)
+n = 5
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+print(sum) 
+
+
+# WAP to find factorial of first n numbers (using for)
+n = 5
+fact = 1
+i = 1
+for i in range(1,n+1):
+    fact *= i
+    i += 1
+print(fact)    
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
