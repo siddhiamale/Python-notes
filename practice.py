@@ -237,3 +237,52 @@ print(fact)
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------
+# PART 6
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+# WAF to print the length of list.(list is the parameter)
+cities = ["nashik","sinnar","pune","sangamner"]
+nums = [2,4,7,5,4,5,4,8,7,4,3,6,9]
+def length(list):
+    print(len(list))
+
+length(cities)    
+length(nums)               # 4,13
+
+
+# WAF to print the elements of list in a single line.(list is the parameter)
+cities = ["nashik","sinnar","pune","sangamner"]
+nums = [2,4,7,5,4,5,4,]
+def length(list):
+    for ele in list:
+        print(ele,end=" ")
+
+length(cities)
+length(nums)        
+
+
+# WAF to find the factorial of n.(n is the parameter)
+def find_fact(n):
+    fact=1
+    for i in range(1,n+1):
+        fact *= i
+    print(fact)  
+
+find_fact(5)      
+
+
+# WAF to convert USD to INR
+def convert(usd):
+    total=usd*83
+    print(f"{usd} USD = {total} INR")
+
+convert(10)    
+
+
+# Even Odd
+def oddEven(n):
+    if (n % 2 == 0):
+        print(n,"is even")
+    else:
+        print(n,"is odd")
+
+oddEven(33)
