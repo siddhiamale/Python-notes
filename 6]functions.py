@@ -48,3 +48,11 @@ def show(n):
     print("END")
 
 show(3)                # 3 2 1 END END END
+ 
+def fact(n):
+    if(n == 0 or n == 1):
+        return 1
+    else:
+        return n*fact(n-1)
+    
+print(fact(4))        # 24
