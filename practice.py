@@ -286,3 +286,64 @@ def oddEven(n):
         print(n,"is odd")
 
 oddEven(33)
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+# PART 7
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Create a new file "practice.txt" using python .Add multiline text data in it
+f= open("practice.txt","w")
+f.write("Hi everyone\nwe are learning File I/O\nusing java\nL like programming in java")
+f.close()
+
+
+# WAF that replaces all occurences of "java" with "python" in above file
+f= open("practice.txt","r")
+data = f.read()
+new_data = data.replace("java","python")
+print(new_data)
+
+with open("practice.txt","w") as f:
+    f.write(new_data)
+
+
+# Search if the word "learning" exists in the file or not    
+def check():
+  with open("practice.txt","r") as f:
+    data = f.read()
+    if(data.find("learning") != -1):
+        print("found")
+    else:
+        print("not found")    
+
+check()        
+
+
+# WAF to find in which line of the file does the word "learning" occur first.Print -1 if word not found
+def check_line():
+    word = "learning"
+    data = True
+    line_no = 1
+    with open("practice.txt","r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1
+        return -1
+print(check_line())                # 2
+
+
+# From a file containing numbers separated by comma.print the count of even numbers
+count = 0
+with open("practice.txt","r") as f:
+    data = f.read()
+  
+nums = data.split(",")
+for val in nums:
+    if(int(val) % 2 == 0):
+        count += 1
+
+print(count)        
